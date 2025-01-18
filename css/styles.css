@@ -7,10 +7,56 @@ body {
 ul,
 ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* heder */
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .logo {
@@ -23,7 +69,10 @@ a {
     color: #4d5ae5;
 }
 
-/* ----------------HEADER----------------------- */
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
 
 .header-logo .logo-part {
     color: #2e2f42;
@@ -34,6 +83,8 @@ a {
 }
 
 .nav-link {
+    display: block;
+    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -48,9 +99,12 @@ a {
 
 .contacts {
     font-style: normal;
+    margin-left: auto;
 }
 
 .contacts-link {
+    display: block;
+    padding: 24px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -62,13 +116,20 @@ a {
     color: #404bbf;
 }
 
+
 .footer-logo {
     background-color: #2e2f42;
 }
 
 /*---------------- HERO ---------*/
 
-.hero {
+.section {
+    padding: 120px 0;
+}
+
+
+
+.section-hero {
     background-color: #2e2f42;
 }
 
@@ -79,6 +140,8 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
+    margin-bottom: 48px;
+
 
 }
 
@@ -90,6 +153,13 @@ a {
     color: #ffffff;
     cursor: pointer;
     background-color: #4d5ae5;
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
 }
 
 .hero-button:hover,
@@ -98,11 +168,35 @@ a {
 }
 
 /* ----------ABOUT------------ */
-.about {}
+.team-container {
+    display: flex;
+    align-items: center;
+}
 
-.about-list {}
 
-.about-item {}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.about-list {
+    display: flex;
+    gap: 24px;
+
+}
+
+.about-item {
+    flex-basis: calc((100% - 72px) / 4);
+}
 
 .about-titel {
     font-weight: 500;
@@ -125,6 +219,11 @@ a {
     background-color: #f4f4fd;
 }
 
+.team-container {
+    display: block;
+    align-items: center;
+}
+
 .team {
     font-weight: 700;
     font-size: 36px;
@@ -133,15 +232,35 @@ a {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
+
 }
 
 .team-list {
-    background-color: #ffffff;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+
 
 .team-item {
     background-color: #ffffff;
+    border-bottom: 1px solid #e7e9fc;
+    border-radius: 4px;
+
 }
+
+.menegers {
+    padding: 32px 0;
+}
+
+/*.team-foto {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;*/
 
 .team-imeg {}
 
@@ -152,6 +271,7 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    padding: 8px 0;
 }
 
 .team-text {
@@ -177,15 +297,26 @@ a {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
+.portfolio-container {}
+
 .portfolio-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px 24px;
     background-color: #ffffff;
+
 }
 
 .portfolio-item {
     background-color: #ffffff;
+    border: 1px solid #e7e9fc;
+    width: calc((100% - 48px) / 3);
 }
+
 
 .portfolio-imeg {}
 
@@ -195,6 +326,8 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 32px;
+    padding-left: 16px;
 }
 
 .portfolio-text {
@@ -203,13 +336,25 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    padding: 8px 0 32px 16px;
 }
 
-/* --------footer--------- */
+
+.footer-container {
+    padding: 100px 0;
+
+}
+
+.footer-logo {
+    padding-bottom: 8px;
+}
+
 .footer-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    width: 264px;
+
 }
