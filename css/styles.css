@@ -108,7 +108,7 @@ img {
 
 .contacts-link {
     display: block;
-    padding: 24px;
+    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -132,7 +132,6 @@ img {
 }
 
 .hero-container {
-    /*padding: 188px 0;*/
     text-align: center;
 }
 
@@ -142,9 +141,9 @@ img {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #ffffff;
-    margin-bottom: 48px;
     max-width: 496px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .hero-button {
@@ -163,6 +162,7 @@ img {
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
+    margin-top: 48px;
 }
 
 .hero-button:hover,
@@ -171,12 +171,10 @@ img {
 }
 
 /* ----------ABOUT------------ */
-.team-container {
+.about-containerer {
     display: flex;
     align-items: center;
 }
-
-
 
 .visually-hidden {
     position: absolute;
@@ -194,7 +192,6 @@ img {
 .about-list {
     display: flex;
     gap: 24px;
-
 }
 
 .about-item {
@@ -207,14 +204,14 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
+    /*margin-bottom: 8px;*/
 }
 
 .about-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
     color: #434455;
 }
 
@@ -257,7 +254,7 @@ img {
 }
 
 .menegers {
-    padding: 32px 0;
+    margin: 32px 16px;
 }
 
 .team-lider {
@@ -307,13 +304,13 @@ img {
 
 .portfolio-item {
     background-color: #ffffff;
-    /* border: 1px solid #e7e9fc;*/
+    border: 1px solid #e7e9fc;
     width: calc((100% - 48px) / 3);
 }
 
 .category {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
+    margin: 32px 16px;
+    /* border: 1px solid #e7e9fc;*/
     border-top: none;
 }
 
@@ -334,7 +331,9 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    padding: 8px 0 32px 16px;
+}
+
+/*padding: 8px 0 32px 16px;
 }
 
 /*-----footer-------------------------*/
