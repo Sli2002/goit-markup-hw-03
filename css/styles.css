@@ -121,20 +121,18 @@ img {
 }
 
 
-
-
-/*---------------- HERO ---------*/
-
-/*.section {
+.section {
     padding: 120px 0;
 }
-*/
+
+/*---------------- HERO ---------*/
 .section-hero {
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 
 .hero-container {
-    padding: 188px 0;
+    /*padding: 188px 0;*/
     text-align: center;
 }
 
