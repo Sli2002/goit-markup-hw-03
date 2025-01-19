@@ -125,10 +125,10 @@ img {
 
 /*---------------- HERO ---------*/
 
-.section {
+/*.section {
     padding: 120px 0;
 }
-
+*/
 .section-hero {
     background-color: #2e2f42;
 }
@@ -146,8 +146,7 @@ img {
     color: #ffffff;
     margin-bottom: 48px;
     max-width: 496px;
-
-
+    text-align: center;
 }
 
 .hero-button {
